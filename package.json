@@ -4,7 +4,10 @@
   "description": "virtual platform for cerberus engine games",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build-client-watch": "webpack -w",
+    "test": "test",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
   },
   "author": "kat le",
   "license": "ISC",

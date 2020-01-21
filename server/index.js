@@ -3,11 +3,8 @@ const morgan = require("morgan");
 const compression = require("compression");
 const path = require("path");
 const db = require("./db");
-const session = require("express-session");
-const SequelizeStore = require("connect-session-sequelize");
-const sessionStore = new SequelizeStore({db});
 const socketio = require("socket.io");
-const PORT = process.env.PORT || 0925;
+const PORT = process.env.PORT || 2509;
 const app = express();
 
 module.exports = app;
@@ -28,7 +25,7 @@ const createApp = () => {
 
     // routes
     app.use("/api", require("./api"));
-    app.use("/auth", require("/auth"));
+    app.use("/auth", require("./auth"));
 
     // serves index.html
     app.use("*", (req, res) => {
@@ -55,7 +52,6 @@ const startListening = () => {
 const syncDb = () => db.sync();
 
 async function startApp() {
-    sessionStore.sync();
     syncDb();
     createApp();
     startListening();
