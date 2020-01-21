@@ -1,0 +1,11 @@
+# Mac
+.DS_Store
+
+# Deployment dir
+node_modules
+bundle.js
+bundle.js.map
+
+# Misc
+base_set
+npm-debug.log
