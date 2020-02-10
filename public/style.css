@@ -1,3 +1,26 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #00001a;
+}
+
+h1 {
+    color: whitesmoke
+}
+
+nav {
+    background-color: #2d00b3;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink {
+    flex-flow: row wrap;
+    justify-content: right;
+}
+
+a:link, a:visited {
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
 }
