@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({handleClick, isLoggedIn}) => (
     <div>
-        <h1>Cerberus Engine</h1>
+        <h1>CERBERUS ENGINE</h1>
         <nav>
             <div className="navlink">
                 <Link to="/rules">HOW TO PLAY</Link>

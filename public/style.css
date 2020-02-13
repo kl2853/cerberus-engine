@@ -24,3 +24,13 @@ a:link, a:visited {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 }
+
+.inputfield {
+    text-align: left;
+}
+
+#authform {
+    background-color: turquoise;
+    display: flex;
+    justify-content: space-around;
+}
